@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename={import.meta.env.BASE_URL}>
+    <Router>
       <div className="min-h-screen bg-gray-50 flex flex-col font-sans selection:bg-[#D4A373] selection:text-white">
         <ScrollToTop />
         <Navbar />
