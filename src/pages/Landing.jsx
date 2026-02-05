@@ -4,12 +4,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
 const slides = [
-    { id: 1, image: '/assets/slides/cereales.webp', title: 'Cereales Seleccionados', subtitle: 'La base de una alimentación sana' },
-    { id: 2, image: '/assets/slides/condimentos.webp', title: 'Condimentos Premium', subtitle: 'Realza el sabor de tus comidas' },
-    { id: 3, image: '/assets/slides/encurtidos.webp', title: 'Encurtidos Artesanales', subtitle: 'Tradición y sabor en cada frasco' },
-    { id: 4, image: '/assets/slides/frutos-secos.webp', title: 'Frutos Secos', subtitle: 'Energía natural para tu día' },
-    { id: 5, image: '/assets/slides/granos.webp', title: 'Granos de Calidad', subtitle: 'Del campo a tu mesa' },
-    { id: 6, image: '/assets/slides/reposteria.webp', title: 'Repostería', subtitle: 'Dulzura con ingredientes nobles' },
+    { id: 1, image: 'assets/slides/cereales.webp', title: 'Cereales Seleccionados', subtitle: 'La base de una alimentación sana' },
+    { id: 2, image: 'assets/slides/condimentos.webp', title: 'Condimentos Premium', subtitle: 'Realza el sabor de tus comidas' },
+    { id: 3, image: 'assets/slides/encurtidos.webp', title: 'Encurtidos Artesanales', subtitle: 'Tradición y sabor en cada frasco' },
+    { id: 4, image: 'assets/slides/frutos-secos.webp', title: 'Frutos Secos', subtitle: 'Energía natural para tu día' },
+    { id: 5, image: 'assets/slides/granos.webp', title: 'Granos de Calidad', subtitle: 'Del campo a tu mesa' },
+    { id: 6, image: 'assets/slides/reposteria.webp', title: 'Repostería', subtitle: 'Dulzura con ingredientes nobles' },
 ];
 
 const Landing = () => {
@@ -222,12 +222,12 @@ const Landing = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
-                            { id: 'cereales', name: 'Cereales', img: '/assets/productos/cereales/card.jpg' },
-                            { id: 'condimentos', name: 'Condimentos', img: '/assets/productos/condimentos/card.jpg' },
-                            { id: 'encurtidos', name: 'Encurtidos', img: '/assets/productos/encurtidos/card.jpg' },
-                            { id: 'frutos-secos', name: 'Frutos Secos', img: '/assets/productos/frutos-secos/card.jpg' },
-                            { id: 'granos', name: 'Granos', img: '/assets/productos/granos/card.jpg' },
-                            { id: 'reposteria', name: 'Repostería', img: '/assets/productos/reposteria/card.jpg' }
+                            { id: 'cereales', name: 'Cereales', img: 'assets/productos/cereales/card.jpg' },
+                            { id: 'condimentos', name: 'Condimentos', img: 'assets/productos/condimentos/card.jpg' },
+                            { id: 'encurtidos', name: 'Encurtidos', img: 'assets/productos/encurtidos/card.jpg' },
+                            { id: 'frutos-secos', name: 'Frutos Secos', img: 'assets/productos/frutos-secos/card.jpg' },
+                            { id: 'granos', name: 'Granos', img: 'assets/productos/granos/card.jpg' },
+                            { id: 'reposteria', name: 'Repostería', img: 'assets/productos/reposteria/card.jpg' }
                         ].map((cat, index) => (
                             <motion.div
                                 key={cat.id}
