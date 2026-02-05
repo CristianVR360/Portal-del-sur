@@ -67,7 +67,7 @@ const Navbar = () => {
                     onClick={() => window.scrollTo(0, 0)}
                 >
                     <img
-                        src="/assets/logos/logo.svg"
+                        src={`${import.meta.env.BASE_URL}assets/logos/logo.svg`}
                         alt="Portal del Sur"
                         className="h-12 w-auto drop-shadow-md transition-all"
                     />

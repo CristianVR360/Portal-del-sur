@@ -41,7 +41,7 @@ const Landing = () => {
                     >
                         <div className="absolute inset-0 bg-black/50 md:bg-transparent bg-gradient-to-b from-black/60 via-black/40 to-[#1B4332]/90 z-10" />
                         <img
-                            src={slides[currentSlide].image}
+                            src={`${import.meta.env.BASE_URL}${slides[currentSlide].image}`}
                             alt={slides[currentSlide].title}
                             className="w-full h-full object-cover object-[75%] md:object-center"
                         />
@@ -59,7 +59,7 @@ const Landing = () => {
                         className="mb-8 p-6 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 shadow-2xl"
                     >
                         <img
-                            src="/assets/logos/logo.svg"
+                            src={`${import.meta.env.BASE_URL}assets/logos/logo.svg`}
                             alt="Portal del Sur Logo"
                             className="w-48 md:w-64 lg:w-80 h-auto drop-shadow-2xl"
                         />
@@ -159,7 +159,7 @@ const Landing = () => {
                             <div className="absolute -inset-4 bg-[#D4A373] rounded-2xl rotate-3 opacity-20 group-hover:rotate-6 transition-transform duration-500"></div>
                             <div className="rounded-2xl overflow-hidden shadow-2xl relative aspect-[4/5] bg-white">
                                 <img
-                                    src="/assets/productos/mix-productos.png"
+                                    src={`${import.meta.env.BASE_URL}assets/productos/mix-productos.png`}
                                     alt="Gran Variedad de Productos Portal del Sur"
                                     className="w-full h-full object-contain p-4 hover:scale-105 transition-transform duration-700"
                                 />
@@ -244,7 +244,7 @@ const Landing = () => {
                             >
                                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors z-10" />
                                 <img
-                                    src={cat.img}
+                                    src={`${import.meta.env.BASE_URL}${cat.img}`}
                                     alt={cat.name}
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />

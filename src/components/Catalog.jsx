@@ -318,7 +318,7 @@ const Catalog = () => {
                                 <div className="aspect-square overflow-hidden relative bg-gray-50 border-b border-gray-50">
                                     <div className="absolute inset-0 bg-white/50 group-hover:bg-transparent transition-colors duration-300"></div>
                                     <img
-                                        src={product.image}
+                                        src={`${import.meta.env.BASE_URL}${product.image}`}
                                         alt={product.name}
                                         loading="lazy"
                                         className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-700 mix-blend-multiply"
