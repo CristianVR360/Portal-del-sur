@@ -4,12 +4,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
 const slides = [
-    { id: 1, image: '/assets/slides/cereales.jpg.jpeg', title: 'Cereales Seleccionados', subtitle: 'La base de una alimentación sana' },
-    { id: 2, image: '/assets/slides/condimentos.jpg.jpeg', title: 'Condimentos Premium', subtitle: 'Realza el sabor de tus comidas' },
-    { id: 3, image: '/assets/slides/encurtidos.jpg.jpeg', title: 'Encurtidos Artesanales', subtitle: 'Tradición y sabor en cada frasco' },
-    { id: 4, image: '/assets/slides/frutos-secos.jpg.jpeg', title: 'Frutos Secos', subtitle: 'Energía natural para tu día' },
-    { id: 5, image: '/assets/slides/granos.jpg.jpeg', title: 'Granos de Calidad', subtitle: 'Del campo a tu mesa' },
-    { id: 6, image: '/assets/slides/reposteria.jpg.jpeg', title: 'Repostería', subtitle: 'Dulzura con ingredientes nobles' },
+    { id: 1, image: '/assets/slides/cereales.webp', title: 'Cereales Seleccionados', subtitle: 'La base de una alimentación sana' },
+    { id: 2, image: '/assets/slides/condimentos.webp', title: 'Condimentos Premium', subtitle: 'Realza el sabor de tus comidas' },
+    { id: 3, image: '/assets/slides/encurtidos.webp', title: 'Encurtidos Artesanales', subtitle: 'Tradición y sabor en cada frasco' },
+    { id: 4, image: '/assets/slides/frutos-secos.webp', title: 'Frutos Secos', subtitle: 'Energía natural para tu día' },
+    { id: 5, image: '/assets/slides/granos.webp', title: 'Granos de Calidad', subtitle: 'Del campo a tu mesa' },
+    { id: 6, image: '/assets/slides/reposteria.webp', title: 'Repostería', subtitle: 'Dulzura con ingredientes nobles' },
 ];
 
 const Landing = () => {
@@ -159,7 +159,7 @@ const Landing = () => {
                             <div className="absolute -inset-4 bg-[#D4A373] rounded-2xl rotate-3 opacity-20 group-hover:rotate-6 transition-transform duration-500"></div>
                             <div className="rounded-2xl overflow-hidden shadow-2xl relative aspect-[4/5] bg-white">
                                 <img
-                                    src={`${import.meta.env.BASE_URL}assets/productos/mix-productos.png`}
+                                    src={`${import.meta.env.BASE_URL}assets/productos/mix-productos.webp`}
                                     alt="Gran Variedad de Productos Portal del Sur"
                                     className="w-full h-full object-contain p-4 hover:scale-105 transition-transform duration-700"
                                 />
