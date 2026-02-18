@@ -3,12 +3,19 @@ import { Mail, Instagram, Linkedin, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#1B4332] text-white pt-16 pb-8" id="contacto">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <footer className="bg-[#d52d12] text-white pt-16 pb-8 relative overflow-hidden" id="contacto">
+            {/* Gradient Overlay for depth */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40 z-0" />
+
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
                     {/* Company Info */}
                     <div>
-                        <h3 className="font-serif text-3xl font-bold mb-6 text-[#D4A373]">Portal del Sur</h3>
+                        <img
+                            src={`${import.meta.env.BASE_URL}assets/logos/logo-blanco.svg`}
+                            alt="Portal del Sur Logo"
+                            className="h-16 w-auto mb-6 drop-shadow-md"
+                        />
                         <p className="text-gray-300 leading-relaxed mb-6">
                             Llevando el sabor auténtico de la Araucanía a tu mesa por más de 20 años. Calidad, frescura y tradición en cada producto.
                         </p>
@@ -42,10 +49,10 @@ const Footer = () => {
                     <div>
                         <h4 className="font-serif text-xl font-bold mb-6 text-white border-b-2 border-[#D4A373] inline-block pb-1">Conéctate</h4>
                         <div className="flex space-x-4 mb-8">
-                            <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-[#D4A373] hover:text-[#1B4332] transition-all duration-300 group">
+                            <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-[#D4A373] hover:text-[#d52d12] transition-all duration-300 group">
                                 <Instagram size={24} className="group-hover:scale-110 transition-transform" />
                             </a>
-                            <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-[#D4A373] hover:text-[#1B4332] transition-all duration-300 group">
+                            <a href="#" className="bg-white/10 p-3 rounded-full hover:bg-[#D4A373] hover:text-[#d52d12] transition-all duration-300 group">
                                 <Linkedin size={24} className="group-hover:scale-110 transition-transform" />
                             </a>
                         </div>
@@ -55,7 +62,7 @@ const Footer = () => {
                             {/* Simplified form for footer, full form in Contact section */}
                             <input type="email" name="email" placeholder="Tu Email" className="w-full bg-black/20 border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-[#D4A373] transition-colors" required />
                             <textarea name="message" placeholder="Mensaje" rows="2" className="w-full bg-black/20 border border-white/10 rounded px-3 py-2 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-[#D4A373] transition-colors" required></textarea>
-                            <button type="submit" className="w-full bg-[#D4A373] text-[#1B4332] font-bold py-2 rounded hover:bg-white transition-colors text-sm">
+                            <button type="submit" className="w-full bg-[#D4A373] text-[#d52d12] font-bold py-2 rounded hover:bg-white transition-colors text-sm">
                                 Enviar
                             </button>
                         </form>

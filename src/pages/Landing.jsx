@@ -25,7 +25,7 @@ const Landing = () => {
     }, []);
 
     return (
-        <div className="bg-neutral-50 min-h-screen font-sans selection:bg-[#D4A373] selection:text-[#1B4332]">
+        <div className="bg-neutral-50 min-h-screen font-sans selection:bg-[#D4A373] selection:text-[#d52d12]">
             {/* --- HERO SECTION --- */}
             <section id="inicio" className="relative h-screen w-full overflow-hidden flex flex-col justify-center items-center">
 
@@ -39,14 +39,22 @@ const Landing = () => {
                         transition={{ duration: 1.5, ease: "easeInOut" }}
                         className="absolute inset-0 w-full h-full z-0"
                     >
-                        <div className="absolute inset-0 bg-black/50 md:bg-transparent bg-gradient-to-b from-black/60 via-black/40 to-[#1B4332]/90 z-10" />
+                        <div className="absolute inset-0 bg-black/70 md:bg-transparent bg-gradient-to-b from-black/80 via-black/60 to-black/95 z-10" />
                         <img
                             src={`${import.meta.env.BASE_URL}${slides[currentSlide].image}`}
                             alt={slides[currentSlide].title}
                             className="w-full h-full object-cover object-[75%] md:object-center"
                         />
+
                     </motion.div>
                 </AnimatePresence>
+
+                {/* Static Hero Elements */}
+                <img
+                    src={`${import.meta.env.BASE_URL}assets/shape.svg`}
+                    className="absolute bottom-0 left-0 w-full z-15 pointer-events-none"
+                    alt=""
+                />
 
                 {/* Hero Content (Centered Logo & Text) */}
                 <div className="relative z-20 flex flex-col items-center justify-center px-4 w-full h-full">
@@ -56,7 +64,7 @@ const Landing = () => {
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5, type: 'spring' }}
-                        className="mb-8 p-6 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 shadow-2xl"
+                        className="mb-8"
                     >
                         <img
                             src={`${import.meta.env.BASE_URL}assets/logos/logo.svg`}
@@ -113,10 +121,10 @@ const Landing = () => {
                                 navigate('/catalogo');
                                 window.scrollTo(0, 0);
                             }}
-                            className="cursor-pointer group relative px-8 py-4 bg-[#D4A373] text-[#1B4332] font-bold text-lg rounded-full overflow-hidden shadow-xl hover:shadow-[#D4A373]/30 transition-all duration-300"
+                            className="cursor-pointer group relative px-8 py-4 bg-[#D4A373] text-[#d52d12] font-bold text-lg rounded-full overflow-hidden shadow-xl hover:shadow-[#D4A373]/30 transition-all duration-300"
                         >
                             <span className="relative z-10 group-hover:text-white transition-colors duration-300">Ver Catálogo</span>
-                            <div className="absolute inset-0 h-full w-full scale-0 rounded-full transition-all duration-300 group-hover:scale-100 group-hover:bg-[#1B4332]" />
+                            <div className="absolute inset-0 h-full w-full scale-0 rounded-full transition-all duration-300 group-hover:scale-100 group-hover:bg-[#d52d12]" />
                         </button>
 
                         <a
@@ -173,10 +181,10 @@ const Landing = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <span className="inline-block py-1 px-3 rounded-full bg-[#1B4332]/10 text-[#1B4332] font-bold text-xs tracking-wider uppercase mb-4">
+                            <span className="inline-block py-1 px-3 rounded-full bg-[#d52d12]/10 text-[#d52d12] font-bold text-xs tracking-wider uppercase mb-4">
                                 Presencia Regional
                             </span>
-                            <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#1B4332] mb-6 leading-tight">
+                            <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#d52d12] mb-6 leading-tight">
                                 Variedad que une <br />
                                 <span className="text-[#D4A373] relative">
                                     a la Región
@@ -202,7 +210,7 @@ const Landing = () => {
                                     { number: 'Mejor', label: 'Precio Calidad' }
                                 ].map((stat, idx) => (
                                     <div key={idx} className="text-center sm:text-left">
-                                        <span className="block text-3xl md:text-4xl font-serif font-bold text-[#1B4332] mb-1">{stat.number}</span>
+                                        <span className="block text-3xl md:text-4xl font-serif font-bold text-[#d52d12] mb-1">{stat.number}</span>
                                         <span className="text-sm text-gray-500 font-medium leading-tight block">{stat.label}</span>
                                     </div>
                                 ))}
@@ -217,7 +225,7 @@ const Landing = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <span className="text-[#D4A373] font-bold tracking-widest uppercase text-sm mb-2 block">Descubre</span>
-                        <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#1B4332]">Nuestras Categorías</h2>
+                        <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#d52d12]">Nuestras Categorías</h2>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

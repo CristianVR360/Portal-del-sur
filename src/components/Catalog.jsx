@@ -20,16 +20,16 @@ const MultiSelectDropdown = ({ label, icon: Icon, options, selectedValues, onCha
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, []);
 
-    const themeColor = color === "accent" ? "text-accent border-accent" : "text-[#1B4332] border-[#1B4332]";
-    const themeBg = color === "accent" ? "bg-accent text-[#1B4332]" : "bg-[#1B4332] text-white";
+    const themeColor = color === "accent" ? "text-accent border-accent" : "text-[#d52d12] border-[#d52d12]";
+    const themeBg = color === "accent" ? "bg-accent text-[#d52d12]" : "bg-[#d52d12] text-white";
 
     return (
         <div className="relative" ref={containerRef}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className={`flex items-center gap-2 px-5 py-3 rounded-xl border transition-all duration-200 ${isOpen || selectedValues.length > 0
-                    ? `${themeBg} shadow-lg ring-2 ring-offset-1 ring-[#1B4332]/20 border-transparent`
-                    : `bg-white text-gray-700 border-gray-200 hover:border-[${color === 'primary' ? '#1B4332' : '#D4A373'}]`
+                    ? `${themeBg} shadow-lg ring-2 ring-offset-1 ring-[#d52d12]/20 border-transparent`
+                    : `bg-white text-gray-700 border-gray-200 hover:border-[${color === 'primary' ? '#d52d12' : '#D4A373'}]`
                     }`}
             >
                 {Icon && <Icon size={18} />}
@@ -58,12 +58,12 @@ const MultiSelectDropdown = ({ label, icon: Icon, options, selectedValues, onCha
                                     <button
                                         key={option.id}
                                         onClick={() => onChange(option.id)}
-                                        className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm transition-colors mb-1 ${isSelected ? 'bg-[#1B4332]/5 text-[#1B4332] font-semibold' : 'text-gray-600 hover:bg-gray-50'
+                                        className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm transition-colors mb-1 ${isSelected ? 'bg-[#d52d12]/5 text-[#d52d12] font-semibold' : 'text-gray-600 hover:bg-gray-50'
                                             }`}
                                     >
                                         <span className="flex items-center gap-2 text-left">
                                             {/* Custom Checkbox UI */}
-                                            <div className={`w-4 h-4 rounded border flex items-center justify-center transition-colors ${isSelected ? 'bg-[#1B4332] border-[#1B4332]' : 'border-gray-300'}`}>
+                                            <div className={`w-4 h-4 rounded border flex items-center justify-center transition-colors ${isSelected ? 'bg-[#d52d12] border-[#d52d12]' : 'border-gray-300'}`}>
                                                 {isSelected && <Check size={10} className="text-white" strokeWidth={4} />}
                                             </div>
                                             {option.name}
@@ -165,7 +165,7 @@ const Catalog = () => {
 
                 {/* Header & Title */}
                 <div className="text-center mb-12">
-                    <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#1B4332] mb-4">Catálogo de Productos</h2>
+                    <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#d52d12] mb-4">Catálogo de Productos</h2>
                     <p className="text-gray-500">Explora nuestros sabores filtrando según tus preferencias.</p>
                 </div>
 
@@ -268,7 +268,7 @@ const Catalog = () => {
                                 {selectedCategories.map(id => {
                                     const cat = categories.find(c => c.id === id);
                                     return (
-                                        <span key={id} className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#1B4332]/10 text-[#1B4332] rounded-full text-sm font-semibold border border-[#1B4332]/10">
+                                        <span key={id} className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#d52d12]/10 text-[#d52d12] rounded-full text-sm font-semibold border border-[#d52d12]/10">
                                             {cat?.name}
                                             <button onClick={() => handleCategoryChange(id)} className="hover:text-red-500"><X size={14} /></button>
                                         </span>
@@ -286,7 +286,7 @@ const Catalog = () => {
                                     );
                                 })}
 
-                                <button onClick={clearFilters} className="text-sm text-gray-500 hover:text-[#1B4332] underline ml-2 decoration-dotted">
+                                <button onClick={clearFilters} className="text-sm text-gray-500 hover:text-[#d52d12] underline ml-2 decoration-dotted">
                                     Borrar todo
                                 </button>
                             </motion.div>
@@ -296,7 +296,7 @@ const Catalog = () => {
 
                 {/* Results Info */}
                 <div className="flex justify-between items-center mb-6 text-sm text-gray-500 px-2">
-                    <span>Mostrando <span className="font-bold text-[#1B4332]">{filteredProducts.length}</span> productos</span>
+                    <span>Mostrando <span className="font-bold text-[#d52d12]">{filteredProducts.length}</span> productos</span>
                 </div>
 
                 {/* Product Grid */}
@@ -331,7 +331,7 @@ const Catalog = () => {
 
                                     {/* Category Badge overlay */}
                                     <div className="absolute top-4 left-4">
-                                        <span className="bg-white/95 backdrop-blur shadow-sm text-[#1B4332] text-[10px] font-bold px-2 py-1 rounded border border-gray-100 uppercase tracking-wider">
+                                        <span className="bg-white/95 backdrop-blur shadow-sm text-[#d52d12] text-[10px] font-bold px-2 py-1 rounded border border-gray-100 uppercase tracking-wider">
                                             {categories.find(c => c.id === product.category)?.name}
                                         </span>
                                     </div>
@@ -340,7 +340,7 @@ const Catalog = () => {
                                 <div className="p-6 flex flex-col flex-grow relative">
                                     <div className="mb-auto">
                                         <div className="flex justify-between items-start gap-4 mb-2">
-                                            <h3 className="font-serif text-lg font-bold text-[#1B4332] leading-tight">{product.name}</h3>
+                                            <h3 className="font-serif text-lg font-bold text-[#d52d12] leading-tight">{product.name}</h3>
                                         </div>
                                         <p className="text-gray-500 text-xs leading-relaxed mb-4">{product.description}</p>
                                     </div>
@@ -353,7 +353,7 @@ const Catalog = () => {
                                             </div>
                                         )}
 
-                                        <button className="w-full bg-[#1B4332] hover:bg-[#153426] text-white font-medium py-3 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-[#1B4332]/20 hover:shadow-[#1B4332]/40 active:scale-95">
+                                        <button className="w-full bg-[#d52d12] hover:bg-[#153426] text-white font-medium py-3 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-[#d52d12]/20 hover:shadow-[#d52d12]/40 active:scale-95">
                                             Consultar
                                         </button>
                                     </div>
@@ -368,7 +368,7 @@ const Catalog = () => {
                         <div className="bg-[#FFF8F3] p-6 rounded-full inline-block mb-4">
                             <Search size={40} className="text-[#D4A373]" />
                         </div>
-                        <h3 className="text-xl font-bold text-[#1B4332] mb-2">Sin resultados</h3>
+                        <h3 className="text-xl font-bold text-[#d52d12] mb-2">Sin resultados</h3>
                         <p className="text-gray-500">Intenta ajustar tus filtros de búsqueda.</p>
                         <button
                             onClick={clearFilters}
