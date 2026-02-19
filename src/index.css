@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 @import "tailwindcss";
 
 @theme {
   --color-primary: #d52d12;
-  --color-accent: #D4A373;
+  --color-accent: #d4a373;
+  --color-cream: #faf7f4;
 
   --font-serif: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;
 
   --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
   --animate-pan-slow: pan-slow 20s infinite alternate;
   --animate-fade-in-up: fade-in-up 1s ease-out forwards;
-}
 
-@layer utilities {
   @keyframes pan-slow {
     0% {
       background-position: 0% 50%;
@@ -37,15 +37,6 @@
       transform: translateY(0);
     }
   }
-
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
-
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
 }
 
 @layer base {
@@ -63,10 +54,367 @@
   h4,
   h5,
   h6 {
-    @apply font-serif;
+    @apply font-serif font-bold;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-primary;
   }
 }
 
-.glass {
-  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm;
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm;
+  }
+}
+
+/* ============================================================
+   RECETAS — estilos aislados
+   ============================================================ */
+
+/* ---- Pill de tag ---- */
+.receta-tag-pill {
+  @apply inline-block bg-accent/15 text-[#a0622a] text-xs font-semibold px-2.5 py-0.5 rounded-full capitalize;
+}
+
+.receta-tag-pill--sm {
+  @apply text-[10px] px-2 py-0.5;
+}
+
+/* ----  RecetaCard ---- */
+.receta-card {
+  @apply relative bg-white rounded-2xl overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col outline-none focus-visible:ring-2 focus-visible:ring-accent;
+}
+
+.receta-card-img-wrapper {
+  @apply relative h-52 overflow-hidden;
+}
+
+.receta-card-img {
+  @apply w-full h-full object-cover transition-transform duration-500;
+}
+
+.receta-card:hover .receta-card-img {
+  @apply scale-110;
+}
+
+.receta-card-img-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-black/30 to-transparent;
+}
+
+.receta-card-body {
+  @apply flex-1 p-5 flex flex-col gap-2;
+}
+
+.receta-card-title {
+  @apply font-serif font-bold text-lg text-primary leading-tight;
+}
+
+.receta-card-desc {
+  @apply text-sm text-gray-500 leading-relaxed flex-1 line-clamp-3;
+}
+
+.receta-card-footer {
+  @apply flex items-center justify-between flex-wrap gap-2 mt-2 pt-3 border-t border-gray-100;
+}
+
+.receta-card-time {
+  @apply flex items-center gap-1 text-xs text-gray-400;
+}
+
+.receta-card-tags {
+  @apply flex flex-wrap gap-1;
+}
+
+.receta-card-hover-bar {
+  @apply absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-accent to-primary transition-all duration-500;
+}
+
+.receta-card:hover .receta-card-hover-bar {
+  @apply w-full;
+}
+
+/* ---- RecetaModal ---- */
+.receta-modal-backdrop {
+  @apply fixed inset-0 bg-black/65 backdrop-blur-sm z-[999];
+}
+
+.receta-modal-panel {
+  @apply fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95vw] max-w-3xl max-h-[90vh] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden z-[1000];
+}
+
+.receta-modal-close-btn {
+  @apply absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm text-gray-600 rounded-full p-1.5 shadow hover:bg-primary hover:text-white transition-all duration-200 cursor-pointer;
+}
+
+.receta-modal-scroll {
+  @apply flex-1 overflow-y-auto;
+}
+
+.receta-modal-hero {
+  @apply relative h-60 sm:h-72 flex-shrink-0 overflow-hidden;
+}
+
+.receta-modal-hero-img {
+  @apply w-full h-full object-cover;
+}
+
+.receta-modal-hero-overlay {
+  @apply absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent;
+}
+
+.receta-modal-title {
+  @apply absolute bottom-6 left-6 right-12 text-white font-serif font-bold text-2xl sm:text-3xl leading-tight;
+}
+
+.receta-modal-body {
+  @apply p-6 flex flex-col gap-5;
+}
+
+.receta-modal-times {
+  @apply flex items-center gap-4 flex-wrap;
+}
+
+.receta-modal-time-item {
+  @apply flex items-center gap-1.5 text-sm text-gray-600;
+}
+
+.receta-modal-time-icon {
+  @apply text-accent;
+}
+
+.receta-modal-time-label {
+  @apply font-medium text-gray-400 text-xs uppercase tracking-wide;
+}
+
+.receta-modal-time-value {
+  @apply font-semibold text-gray-700;
+}
+
+.receta-modal-time-divider {
+  @apply w-px h-5 bg-gray-200;
+}
+
+.receta-modal-desc {
+  @apply text-gray-600 leading-relaxed text-sm sm:text-base;
+}
+
+.receta-modal-tags {
+  @apply flex items-center gap-2 flex-wrap;
+}
+
+.receta-modal-tag-icon {
+  @apply text-accent;
+}
+
+.receta-modal-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-6;
+}
+
+.receta-modal-section-title {
+  @apply font-serif font-bold text-primary mb-3 text-base;
+}
+
+.receta-ingredients-list {
+  @apply list-none flex flex-col gap-2;
+}
+
+.receta-ingredient-item {
+  @apply flex items-start gap-2 text-sm text-gray-700;
+}
+
+.receta-ingredient-dot {
+  @apply mt-1.5 w-2 h-2 rounded-full bg-accent flex-shrink-0;
+}
+
+.receta-steps-list {
+  @apply list-none flex flex-col gap-3;
+}
+
+.receta-step-item {
+  @apply flex items-start gap-3 text-sm text-gray-700;
+}
+
+.receta-step-number {
+  @apply flex-shrink-0 w-6 h-6 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center;
+}
+
+.receta-related {
+  @apply pt-4 border-t border-gray-100;
+}
+
+.receta-related-grid {
+  @apply grid grid-cols-2 sm:grid-cols-3 gap-3;
+}
+
+.receta-related-card {
+  @apply flex flex-col items-center gap-1.5 p-3 rounded-xl bg-cream border border-[#f0e5d6] text-center;
+}
+
+.receta-related-img {
+  @apply w-16 h-16 object-contain;
+}
+
+.receta-related-name {
+  @apply text-xs font-semibold text-gray-700 leading-tight;
+}
+
+.receta-related-format {
+  @apply text-[10px] text-gray-400;
+}
+
+/* ---- Página Recetas ---- */
+.recetas-page {
+  @apply min-h-screen bg-cream;
+}
+
+.recetas-hero {
+  @apply relative pt-32 pb-20 overflow-hidden;
+}
+
+.recetas-hero-bg {
+  @apply absolute inset-0 bg-gradient-to-br from-primary via-[#c0270f] to-[#8B1A08];
+}
+
+.recetas-hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  background: radial-gradient(ellipse at top right, rgba(212, 163, 115, 0.6), transparent 60%);
+}
+
+.recetas-hero-content {
+  @apply relative z-10 text-center max-w-2xl mx-auto px-4 flex flex-col items-center gap-4;
+}
+
+.recetas-hero-eyebrow {
+  @apply inline-flex items-center gap-2 bg-white/15 text-white/90 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full;
+}
+
+.recetas-hero-title {
+  @apply text-white font-serif font-bold text-5xl sm:text-6xl md:text-7xl drop-shadow-lg;
+}
+
+.recetas-hero-subtitle {
+  @apply text-white/80 text-base sm:text-lg leading-relaxed;
+}
+
+.recetas-grid-section {
+  @apply py-16;
+}
+
+.recetas-grid-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.recetas-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7;
+}
+
+/* ---- RecipesSlider (Home) ---- */
+.recipes-slider-section {
+  @apply py-20 bg-white relative overflow-hidden;
+}
+
+.recipes-slider-section::before {
+  content: '';
+  @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent via-primary to-accent;
+}
+
+.recipes-slider-header {
+  @apply text-center max-w-2xl mx-auto px-4 mb-12 flex flex-col items-center gap-3;
+}
+
+.recipes-slider-eyebrow {
+  @apply inline-flex items-center gap-2 bg-accent/15 text-[#a0622a] text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full;
+}
+
+.recipes-slider-heading {
+  @apply font-serif font-bold text-3xl sm:text-4xl text-gray-800 leading-tight;
+}
+
+.recipes-slider-heading-accent {
+  @apply text-primary;
+}
+
+.recipes-slider-subheading {
+  @apply text-gray-500 text-base;
+}
+
+.recipes-slider-wrapper {
+  @apply relative max-w-5xl mx-auto px-4 sm:px-10;
+}
+
+.recipes-slider-slide {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-cream rounded-2xl p-6 sm:p-10 shadow-lg;
+}
+
+.recipes-slider-img-col {
+  @apply w-full;
+}
+
+.recipes-slider-img-wrap {
+  @apply rounded-xl overflow-hidden aspect-[4/3] shadow-md;
+}
+
+.recipes-slider-img {
+  @apply w-full h-full object-cover;
+}
+
+.recipes-slider-content {
+  @apply flex flex-col gap-4;
+}
+
+.recipes-slider-tags {
+  @apply flex flex-wrap gap-2;
+}
+
+.recipes-slider-title {
+  @apply font-serif font-bold text-2xl sm:text-3xl text-primary leading-tight;
+}
+
+.recipes-slider-desc {
+  @apply text-gray-600 text-sm sm:text-base leading-relaxed;
+}
+
+.recipes-slider-times {
+  @apply flex flex-col gap-1 text-sm text-gray-500;
+}
+
+.recipes-slider-cta {
+  @apply self-start inline-flex items-center gap-2 mt-2 bg-primary text-white text-sm font-bold px-6 py-3 rounded-full hover:bg-[#b02510] transition-colors duration-200 cursor-pointer shadow-md;
+}
+
+.recipes-slider-nav {
+  @apply absolute top-1/2 -translate-y-1/2 bg-white shadow-md text-gray-600 rounded-full p-2 hover:bg-primary hover:text-white transition-all duration-200 cursor-pointer z-10;
+}
+
+.recipes-slider-nav--prev {
+  @apply -left-1 sm:-left-5;
+}
+
+.recipes-slider-nav--next {
+  @apply -right-1 sm:-right-5;
+}
+
+.recipes-slider-dots {
+  @apply flex justify-center gap-2 mt-6;
+}
+
+.recipes-slider-dot {
+  @apply w-2 h-2 rounded-full bg-gray-200 transition-all duration-300 cursor-pointer;
+}
+
+.recipes-slider-dot--active {
+  @apply w-6 bg-primary;
 }

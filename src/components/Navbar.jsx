@@ -52,6 +52,7 @@ const Navbar = () => {
         { name: 'Inicio', href: '/' },
         { name: 'Nosotros', href: '#nosotros' },
         { name: 'Catálogo', href: '/catalogo' },
+        { name: 'Recetas', href: '/recetas' },
         { name: 'Contacto', href: '#contacto' },
     ];
 

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Catalog from './components/Catalog';
 import Footer from './components/Footer';
 import Landing from './pages/Landing';
+import Recetas from './pages/Recetas';
 
 // ScrollToTop component to handle scroll on navigation
 const ScrollToTop = () => {
@@ -35,6 +36,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/catalogo" element={<div className="pt-20"><Catalog /></div>} />
+            <Route path="/recetas" element={<Recetas />} />
           </Routes>
         </main>
 

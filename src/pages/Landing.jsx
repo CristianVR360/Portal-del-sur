@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
+import RecipesSlider from '../components/recetas/RecipesSlider';
 
 const slides = [
     { id: 1, image: 'assets/slides/cereales.webp', title: 'Cereales Seleccionados', subtitle: 'La base de una alimentación sana' },
@@ -268,6 +269,9 @@ const Landing = () => {
                     </div>
                 </div>
             </section>
+
+            {/* --- RECIPES SLIDER SECTION (nueva sección, no modifica nada existente) --- */}
+            <RecipesSlider />
         </div>
     );
 };
