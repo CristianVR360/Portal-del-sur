@@ -2,7 +2,7 @@ export const recetasData = [
     {
         id: "galletas-avena",
         nombre: "Galletas de avena y pasas",
-        imagen: "assets/recetas/galletas-de-avena.jpg",
+        imagen: "assets/recetas/galletas-de-avena.webp",
         descripcionCorta: "Galletas caseras suaves y nutritivas con avena y pasas.",
         descripcion:
             "Estas galletas son ideales para desayunos o colaciones. Combinan fibra, dulzor natural y una textura suave por dentro con exterior ligeramente crujiente.",
@@ -31,7 +31,7 @@ export const recetasData = [
     {
         id: "ensalada-papas-pepinillos",
         nombre: "Ensalada alemana de papas con pepinillos",
-        imagen: "assets/recetas/ensalada.jpg",
+        imagen: "assets/recetas/ensalada.webp",
         descripcionCorta: "Ensalada cremosa y ácida perfecta como acompañamiento.",
         descripcion:
             "Receta tradicional con papas cocidas, pepinillos y cebolla. Ideal para carnes o platos principales.",
@@ -56,7 +56,7 @@ export const recetasData = [
     {
         id: "pebre",
         nombre: "Pebre chileno tradicional",
-        imagen: "assets/recetas/pebre.jpg",
+        imagen: "assets/recetas/pebre.webp",
         descripcionCorta:
             "Salsa fresca y picante típica de Chile para acompañar pan o carnes.",
         descripcion:
@@ -75,7 +75,7 @@ export const recetasData = [
     {
         id: "chucrut-salchichas",
         nombre: "Chucrut salteado con salchichas",
-        imagen: "assets/recetas/chucrut.jpg",
+        imagen: "assets/recetas/chucrut.webp",
         descripcionCorta: "Plato contundente con sabor ácido y ahumado.",
         descripcion:
             "Ideal para días fríos. El chucrut se saltea con salchichas doradas.",
@@ -99,7 +99,7 @@ export const recetasData = [
     {
         id: "avena-chia",
         nombre: "Avena cremosa con chía",
-        imagen: "assets/recetas/avena.jpg",
+        imagen: "assets/recetas/avena.webp",
         descripcionCorta: "Desayuno saludable, saciante y nutritivo.",
         descripcion:
             "Avena cocida lentamente con semillas de chía para obtener textura cremosa.",
@@ -123,7 +123,7 @@ export const recetasData = [
     {
         id: "pollo-curry",
         nombre: "Pollo al curry casero",
-        imagen: "assets/recetas/pollo-curry.jpg",
+        imagen: "assets/recetas/pollo-curry.webp",
         descripcionCorta: "Plato aromático con salsa cremosa y especiada.",
         descripcion:
             "Preparación simple con pollo y curry, perfecta para acompañar arroz.",

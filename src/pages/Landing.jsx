@@ -40,7 +40,7 @@ const Landing = () => {
                         transition={{ duration: 1.5, ease: "easeInOut" }}
                         className="absolute inset-0 w-full h-full z-0"
                     >
-                        <div className="absolute inset-0 bg-black/70 md:bg-transparent bg-gradient-to-b from-black/80 via-black/60 to-black/95 z-10" />
+                        <div className="absolute inset-0 bg-black/35 md:bg-transparent bg-gradient-to-b from-black/40 via-black/30 to-black/50 md:from-black/80 md:via-black/60 md:to-black/95 z-10" />
                         <img
                             src={`${import.meta.env.BASE_URL}${slides[currentSlide].image}`}
                             alt={slides[currentSlide].title}
