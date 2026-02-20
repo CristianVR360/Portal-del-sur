@@ -206,7 +206,7 @@ const Landing = () => {
 
                             <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-100">
                                 {[
-                                    { number: '+500', label: 'Comercios Asociados' },
+                                    { number: '+30 Años', label: 'En el Mercado' },
                                     { number: '100%', label: 'Surtido Completo' },
                                     { number: 'Mejor', label: 'Precio Calidad' }
                                 ].map((stat, idx) => (
