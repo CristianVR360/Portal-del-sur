@@ -51,6 +51,7 @@ const Navbar = () => {
     const navLinks = [
         { name: 'Inicio', href: '/' },
         { name: 'Nosotros', href: '#nosotros' },
+        { name: 'Historia', href: '/historia' },
         { name: 'Catálogo', href: '/catalogo' },
         { name: 'Recetas', href: '/recetas' },
         { name: 'Contacto', href: '#contacto' },

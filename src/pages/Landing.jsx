@@ -221,6 +221,9 @@ const Landing = () => {
                 </div>
             </section>
 
+
+
+
             {/* --- CATEGORIES SECTION --- */}
             <section className="py-24 bg-[#F8F9FA]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -272,6 +275,72 @@ const Landing = () => {
 
             {/* --- RECIPES SLIDER SECTION (nueva sección, no modifica nada existente) --- */}
             <RecipesSlider />
+
+            {/* --- HISTORIA PREVIEW SECTION --- */}
+            <section className="py-24 bg-white relative">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+                        {/* Text Column */}
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                            className="order-2 md:order-1"
+                        >
+                            <span className="text-[#D4A373] font-bold tracking-widest uppercase text-sm mb-4 block">
+                                Nuestra historia
+                            </span>
+                            <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#d52d12] mb-6 leading-tight">
+                                Más de tres décadas de <br /> sabor, esfuerzo y tradición
+                            </h2>
+                            <div className="w-20 h-1 bg-[#D4A373] mb-8"></div>
+                            <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                                Desde un emprendimiento familiar nacido en 1986 hasta consolidarse como un referente del sur de Chile, Portal del Sur ha crecido manteniendo una promesa inquebrantable: calidad, origen y dedicación en cada producto.
+                            </p>
+                            <button
+                                onClick={() => {
+                                    navigate('/historia');
+                                    window.scrollTo(0, 0);
+                                }}
+                                className="group flex items-center gap-2 text-[#d52d12] font-bold text-lg hover:text-[#b02510] transition-colors cursor-pointer"
+                            >
+                                <span className="border-b-2 border-[#d52d12] group-hover:border-[#b02510] pb-1">
+                                    Nuestra historia
+                                </span>
+                                <svg
+                                    className="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </button>
+                        </motion.div>
+
+                        {/* Image Column */}
+                        <motion.div
+                            initial={{ opacity: 0, x: 30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                            className="order-1 md:order-2 relative"
+                        >
+                            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                                <img
+                                    src={`${import.meta.env.BASE_URL}assets/slides/condimentos.webp`}
+                                    alt="Historia Portal del Sur"
+                                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                            </div>
+                            {/* Decorative element */}
+                            <div className="absolute -bottom-6 -left-6 w-full h-full border-2 border-[#D4A373]/20 rounded-2xl -z-10 hidden md:block" />
+                        </motion.div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };
