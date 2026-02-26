@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Landing from './pages/Landing';
 import Recetas from './pages/Recetas';
 import Historia from './pages/Historia';
+import Linktree from './pages/Linktree';
 
 // ScrollToTop component to handle scroll on navigation
 const ScrollToTop = () => {
@@ -29,21 +30,27 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50 flex flex-col font-sans selection:bg-[#D4A373] selection:text-white">
-        <ScrollToTop />
-        <Navbar />
+      <ScrollToTop />
+      <Routes>
+        {/* Linktree — standalone page (no Navbar / Footer) */}
+        <Route path="/linktree" element={<Linktree />} />
 
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="/catalogo" element={<div className="pt-20"><Catalog /></div>} />
-            <Route path="/recetas" element={<Recetas />} />
-            <Route path="/historia" element={<Historia />} />
-          </Routes>
-        </main>
-
-        <Footer />
-      </div>
+        {/* All other pages share the standard layout */}
+        <Route path="/*" element={
+          <div className="min-h-screen bg-gray-50 flex flex-col font-sans selection:bg-[#D4A373] selection:text-white">
+            <Navbar />
+            <main className="flex-grow">
+              <Routes>
+                <Route path="/" element={<Landing />} />
+                <Route path="/catalogo" element={<div className="pt-20"><Catalog /></div>} />
+                <Route path="/recetas" element={<Recetas />} />
+                <Route path="/historia" element={<Historia />} />
+              </Routes>
+            </main>
+            <Footer />
+          </div>
+        } />
+      </Routes>
     </Router>
   );
 }

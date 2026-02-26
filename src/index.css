@@ -418,3 +418,150 @@
 .recipes-slider-dot--active {
   @apply w-6 bg-primary;
 }
+
+/* ============================================================
+   LINKTREE — página de acceso rápido
+   ============================================================ */
+
+.linktree-page {
+  @apply relative min-h-screen flex items-center justify-center overflow-hidden;
+  background: linear-gradient(135deg, #1a0a08 0%, #2d0e0a 30%, #1c1118 60%, #0d0d14 100%);
+}
+
+/* ---- Animated background orbs ---- */
+.linktree-bg {
+  @apply absolute inset-0 overflow-hidden pointer-events-none;
+}
+
+.linktree-bg-orb {
+  @apply absolute rounded-full blur-3xl opacity-30;
+}
+
+.linktree-bg-orb--1 {
+  @apply w-96 h-96 -top-20 -left-20;
+  background: radial-gradient(circle, #d52d12 0%, transparent 70%);
+  animation: linktree-float 8s ease-in-out infinite alternate;
+}
+
+.linktree-bg-orb--2 {
+  @apply w-80 h-80 top-1/2 -right-16;
+  background: radial-gradient(circle, #d4a373 0%, transparent 70%);
+  animation: linktree-float 10s ease-in-out 2s infinite alternate-reverse;
+}
+
+.linktree-bg-orb--3 {
+  @apply w-72 h-72 -bottom-10 left-1/3;
+  background: radial-gradient(circle, #7c3aed 0%, transparent 70%);
+  animation: linktree-float 12s ease-in-out 4s infinite alternate;
+}
+
+@keyframes linktree-float {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(30px, -20px) scale(1.15); }
+}
+
+/* ---- Container ---- */
+.linktree-container {
+  @apply relative z-10 w-full max-w-md mx-auto px-5 py-12 flex flex-col items-center gap-5;
+}
+
+/* ---- Back button ---- */
+.linktree-back-btn {
+  @apply self-start inline-flex items-center gap-2 text-white/50 text-sm font-medium mb-2
+         hover:text-white transition-colors duration-200;
+}
+
+/* ---- Avatar / Logo ---- */
+.linktree-avatar {
+  @apply w-28 h-28 rounded-full flex items-center justify-center p-4
+         bg-white/10 backdrop-blur-md border border-white/15 shadow-lg shadow-black/30;
+}
+
+.linktree-avatar-img {
+  @apply w-full h-full object-contain drop-shadow-md;
+}
+
+/* ---- Header ---- */
+.linktree-header {
+  @apply text-center flex flex-col items-center gap-1 mb-2;
+}
+
+.linktree-title {
+  @apply text-white font-serif font-bold text-3xl tracking-tight drop-shadow-lg;
+}
+
+.linktree-subtitle {
+  @apply text-white/60 text-sm font-sans;
+}
+
+/* ---- Links list ---- */
+.linktree-links {
+  @apply w-full flex flex-col gap-3;
+}
+
+/* ---- Individual link button ---- */
+.linktree-link-btn {
+  @apply w-full flex items-center gap-4 px-4 py-3.5 rounded-2xl
+         bg-white/8 backdrop-blur-md border border-white/10
+         text-left cursor-pointer transition-all duration-300
+         hover:bg-white/14 hover:border-white/20 hover:shadow-xl;
+}
+
+/* Icon disc */
+.linktree-link-icon {
+  @apply flex items-center justify-center w-10 h-10 rounded-xl text-white shrink-0
+         shadow-md;
+}
+
+/* Text stack */
+.linktree-link-text {
+  @apply flex flex-col min-w-0 flex-1;
+}
+
+.linktree-link-label {
+  @apply text-white font-semibold text-sm leading-tight;
+}
+
+.linktree-link-subtitle {
+  @apply text-white/50 text-xs truncate mt-0.5;
+}
+
+/* Arrow */
+.linktree-link-arrow {
+  @apply text-white/25 shrink-0 transition-all duration-300;
+}
+
+.linktree-link-btn:hover .linktree-link-arrow {
+  @apply text-white/60 translate-x-0.5;
+}
+
+/* ---- Footer ---- */
+.linktree-footer-text {
+  @apply text-white/25 text-xs mt-6 font-sans;
+}
+
+/* ---- Instagram Modal ---- */
+.linktree-modal-backdrop {
+  @apply fixed inset-0 bg-black/70 backdrop-blur-sm z-[998];
+}
+
+.linktree-modal {
+  @apply fixed z-[999] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+         w-[92vw] max-w-lg max-h-[90vh] bg-[#1a1a24] rounded-2xl
+         shadow-2xl shadow-black/50 border border-white/10
+         overflow-hidden flex flex-col;
+}
+
+.linktree-modal-close {
+  @apply absolute top-3 right-3 z-10 bg-white/10 backdrop-blur-md text-white/70
+         rounded-full p-2 cursor-pointer
+         hover:bg-white/20 hover:text-white transition-all duration-200;
+}
+
+.linktree-modal-content {
+  @apply overflow-y-auto flex-1;
+}
+
+.linktree-modal-img {
+  @apply w-full h-auto block;
+}
