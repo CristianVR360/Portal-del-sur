@@ -375,18 +375,18 @@ export const products = [
     // --- ENCURTIDOS ---
     {
         id: 301,
-        name: 'Pasta de Ají (Ahi Oro)',
+        name: 'Ají Oro',
         category: 'encurtidos',
-        image: 'assets/productos/encurtidos/ahi-oro-bolsa-400gr.jpg',
-        description: 'Pasta de ají amarillo chileno.',
+        image: 'assets/productos/encurtidos/aji-oro-bolsa-400gr.jpg',
+        description: 'Ají amarillo chileno.',
         format: '400g'
     },
     {
         id: 302,
-        name: 'Pasta de Ají (Ahi Oro)',
+        name: 'Ají Oro',
         category: 'encurtidos',
         image: 'assets/productos/encurtidos/aji-oro-frasco-300gr.jpg',
-        description: 'Pasta de ají amarillo en frasco.',
+        description: 'Ají amarillo en frasco.',
         format: '300g'
     },
     {
