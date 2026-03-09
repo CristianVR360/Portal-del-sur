@@ -18,6 +18,14 @@ export const products = [
         format: '220g'
     },
     {
+        id: 111,
+        name: 'Almidón de Maíz',
+        category: 'cereales',
+        image: 'assets/productos/cereales/almidon-de-maíz-800-gr.jpg',
+        description: 'Almidón de maíz ideal para repostería y salsas.',
+        format: '800g'
+    },
+    {
         id: 102,
         name: 'Avena Instantánea',
         category: 'cereales',
