@@ -342,7 +342,26 @@ const Catalog = () => {
                                         <div className="flex justify-between items-start gap-4 mb-2">
                                             <h3 className="font-serif text-lg font-bold text-[#d52d12] leading-tight">{product.name}</h3>
                                         </div>
-                                        <p className="text-gray-500 text-xs leading-relaxed mb-4">{product.description}</p>
+                                        <div className="text-gray-500 text-xs leading-relaxed mb-4">
+                                            {product.description.split('\n\nTambién disponible en:')[0]}
+
+                                            {product.description.includes('También disponible en:') && (
+                                                <div className="mt-4 pt-4 border-t border-gray-100">
+                                                    <span className="text-[10px] font-bold text-[#d52d12] uppercase tracking-widest block mb-2">Más formatos disponibles:</span>
+                                                    <div className="flex flex-wrap gap-2">
+                                                        {product.description.split('\n\nTambién disponible en:')[1].split(',').map((fmt, idx) => (
+                                                            <span 
+                                                                key={idx} 
+                                                                className="px-2 py-1 bg-[#153426]/5 text-[#153426] rounded-md text-[10px] font-bold border border-[#153426]/10 flex items-center gap-1 group-hover:bg-[#153426]/10 transition-colors"
+                                                            >
+                                                                <Package size={10} className="text-[#D4A373]" />
+                                                                {fmt.trim()}
+                                                            </span>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
                                     </div>
 
                                     <div className="space-y-3 mt-4">

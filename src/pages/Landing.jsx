@@ -329,7 +329,7 @@ const Landing = () => {
                         >
                             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                                 <img
-                                    src={`${import.meta.env.BASE_URL}assets/slides/condimentos.webp`}
+                                    src={`${import.meta.env.BASE_URL}assets/img/historiafoto.webp`}
                                     alt="Historia Portal del Sur"
                                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                                 />

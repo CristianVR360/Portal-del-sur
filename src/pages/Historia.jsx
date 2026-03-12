@@ -11,7 +11,7 @@ const Historia = () => {
                     <div className="absolute inset-0 bg-black/50 z-10" />
                     {/* Placeholder image using existing asset */}
                     <img
-                        src={`${import.meta.env.BASE_URL}assets/slides/condimentos.webp`}
+                        src={`${import.meta.env.BASE_URL}assets/img/historia.webp`}
                         alt="Portal del Sur Historia"
                         className="w-full h-full object-cover"
                     />

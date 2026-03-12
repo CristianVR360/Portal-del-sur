@@ -30,7 +30,7 @@ export const products = [
         name: 'Avena Instantánea',
         category: 'cereales',
         image: 'assets/productos/cereales/avena-instantanea-400gr.jpg',
-        description: 'Avena instantánea de rápida preparación.\n\nTambién disponible en: 700 g',
+        description: 'Avena instantánea de rápida preparación.\n\nTambién disponible en: 670 g, 700 g',
         format: '400g'
     },
     {
@@ -70,7 +70,7 @@ export const products = [
         name: 'Avena Tradicional',
         category: 'cereales',
         image: 'assets/productos/cereales/avena-tradiciona-400gr.jpg',
-        description: 'Hojuelas de avena tradicional integral.',
+        description: 'Hojuelas de avena tradicional integral.\n\nTambién disponible en: 670 g, 800 g',
         format: '400g'
     },
     {
@@ -78,7 +78,7 @@ export const products = [
         name: 'Avena Tradicional',
         category: 'cereales',
         image: 'assets/productos/cereales/avena-tradicional-670gr.jpg',
-        description: 'Avena tradicional en formato grande.\n\nTambién disponible en: 400 g',
+        description: 'Avena tradicional en formato grande.\n\nTambién disponible en: 400 g, 800 g',
         format: '670g'
     },
     {
@@ -96,6 +96,22 @@ export const products = [
         image: 'assets/productos/cereales/trigo-mote--400gr.jpg',
         description: 'Trigo mote pelado listo para cocinar.',
         format: '400g'
+    },
+    {
+        id: 112,
+        name: 'Avena Instantánea',
+        category: 'cereales',
+        image: 'assets/productos/cereales/avena-instantanea-bolsa-700gr.webp',
+        description: 'Avena instantánea de rápida preparación.\n\nTambién disponible en: 400 g, 670 g',
+        format: '700g'
+    },
+    {
+        id: 113,
+        name: 'Avena Tradicional',
+        category: 'cereales',
+        image: 'assets/productos/cereales/avena-tradicional-bolsa-800gr.webp',
+        description: 'Hojuelas de avena tradicional integral en formato familiar.\n\nTambién disponible en: 400 g, 670 g',
+        format: '800g'
     },
 
     // --- CONDIMENTOS ---
@@ -120,7 +136,7 @@ export const products = [
         name: 'Ají de Color',
         category: 'condimentos',
         image: 'assets/productos/condimentos/aji-oro-350gr.jpg',
-        description: 'Pimentón molido para dar color y sabor a tus comidas.\n\nTambién disponible en: 100 g, 300 g, 400 g',
+        description: 'Pimentón molido para dar color y sabor a tus comidas.\n\nTambién disponible en: 30 g, 40 g, 100 g, 300 g, 400 g',
         format: '350g'
     },
     {
@@ -208,7 +224,7 @@ export const products = [
         name: 'Comino con Pimienta Negra Entera',
         category: 'condimentos',
         image: 'assets/productos/condimentos/comino-con-pimienta-negra-entera-40gr.jpg',
-        description: 'Mezcla de especias enteras.',
+        description: 'Mezcla de especias enteras.\n\nTambién disponible en: 45 g',
         format: '40g'
     },
     {
@@ -371,6 +387,70 @@ export const products = [
         description: 'Vinagre clásico de vino tinto.',
         format: '500cc'
     },
+    {
+        id: 235,
+        name: 'Aliño Completo',
+        category: 'condimentos',
+        image: 'assets/productos/condimentos/aliño-completo-frasco-30gr.webp',
+        description: 'Mezcla perfecta de especias para guisos en práctico frasco.\n\nTambién disponible en: 15 g, 40 g, 80 g',
+        format: '30g (Frasco)'
+    },
+    {
+        id: 236,
+        name: 'Clavo de Olor',
+        category: 'condimentos',
+        image: 'assets/productos/condimentos/clavo-de-olor-bolsa-5gr.webp',
+        description: 'Clavo de olor entero de gran aroma, ideal para infusiones y repostería.',
+        format: '5g'
+    },
+    {
+        id: 237,
+        name: 'Clavo de Olor Molido',
+        category: 'condimentos',
+        image: 'assets/productos/condimentos/clavo-de-olor-molido-bolsa-5gr.webp',
+        description: 'Clavo de olor molido para dar un toque especial a tus recetas.',
+        format: '5g'
+    },
+    {
+        id: 238,
+        name: 'Comino con Pimienta Negra Entera',
+        category: 'condimentos',
+        image: 'assets/productos/condimentos/comino-con-pimienta-negra-entera-bolsa-40gr.webp',
+        description: 'Mezcla de especias enteras de alta calidad en formato bolsa.\n\nTambién disponible en: 45 g',
+        format: '40g'
+    },
+    {
+        id: 239,
+        name: 'Nuez Moscada Molida',
+        category: 'condimentos',
+        image: 'assets/productos/condimentos/nuez-moscada-molida-bolsa-5gr.webp',
+        description: 'Nuez moscada molida de sabor intenso y aromático.',
+        format: '5g'
+    },
+    {
+        id: 240,
+        name: 'Pimentón',
+        category: 'condimentos',
+        image: 'assets/productos/condimentos/pimenton-bolsa-40gr.webp',
+        description: 'Pimentón seleccionado para dar color y sabor a tus platos.\n\nTambién disponible en: 30 g (Frasco)',
+        format: '40g'
+    },
+    {
+        id: 241,
+        name: 'Pimentón Molido',
+        category: 'condimentos',
+        image: 'assets/productos/condimentos/pimenton-molido.frasco-30gr.webp',
+        description: 'Pimentón molido premium en frasco conservador.\n\nTambién disponible en: 40 g',
+        format: '30g (Frasco)'
+    },
+    {
+        id: 242,
+        name: 'Salsa de Soya',
+        category: 'condimentos',
+        image: 'assets/productos/condimentos/salsa-de-soya-botella-500cc.webp',
+        description: 'Salsa de soya tradicional para realzar preparaciones orientales y aderezos.',
+        format: '500cc'
+    },
 
     // --- ENCURTIDOS ---
     {
@@ -453,6 +533,14 @@ export const products = [
         description: 'Mix de vegetales encurtidos (zanahoria, cebolla, pepinillo).\n\nTambién disponible en: 180 g, 500 g, 800 g',
         format: '400g'
     },
+    {
+        id: 311,
+        name: 'Salsa Americana',
+        category: 'encurtidos',
+        image: 'assets/productos/encurtidos/salsa-americana-bolsa-400gr.webp',
+        description: 'Mezcla de vegetales picados ideal para completar tus completos y platos típicos.',
+        format: '400g'
+    },
 
     // --- FRUTOS SECOS ---
     {
@@ -485,6 +573,30 @@ export const products = [
         category: 'frutos-secos',
         image: 'assets/productos/frutos-secos/pasas-morenas-100gr.jpg',
         description: 'Uvas pasas dulces y energéticas.',
+        format: '100g'
+    },
+    {
+        id: 405,
+        name: 'Huesillos',
+        category: 'frutos-secos',
+        image: 'assets/productos/frutos-secos/huesillos-bolsa-250gr.webp',
+        description: 'Duraznos deshidratados de calidad, ideales para preparar un tradicional mote con huesillos.',
+        format: '250g'
+    },
+    {
+        id: 406,
+        name: 'Nueces',
+        category: 'frutos-secos',
+        image: 'assets/productos/frutos-secos/nueces-bolsa-70gr.webp',
+        description: 'Nueces mariposa seleccionadas, frescas y nutritivas.',
+        format: '70g'
+    },
+    {
+        id: 407,
+        name: 'Pasas Rubias',
+        category: 'frutos-secos',
+        image: 'assets/productos/frutos-secos/pasas-rubias-bolsa-100gr.webp',
+        description: 'Pasas rubias carnosas y dulces, perfectas para snacks o repostería.',
         format: '100g'
     },
 
@@ -594,5 +706,21 @@ export const products = [
         image: 'assets/productos/reposteria/palitos-de-cóctel-15gr.jpg',
         description: 'Mondadientes de madera.',
         format: '15g'
+    },
+    {
+        id: 610,
+        name: 'Chocolate Amargo',
+        category: 'reposteria',
+        image: 'assets/productos/reposteria/chocolate-amargo-bolsa-80gr.webp',
+        description: 'Chocolate amargo de alta calidad, ideal para repostería fina y coberturas.',
+        format: '80g'
+    },
+    {
+        id: 611,
+        name: 'Chuño',
+        category: 'reposteria',
+        image: 'assets/productos/reposteria/chuño-bolsa-200gr.webp',
+        description: 'Fécula de papa de alta pureza, indispensable en la cocina y repostería.',
+        format: '200g'
     }
 ];
