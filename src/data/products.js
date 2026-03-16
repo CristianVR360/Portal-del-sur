@@ -133,10 +133,10 @@ export const products = [
     },
     {
         id: 203,
-        name: 'Ají de Color',
+        name: 'Ají Oro',
         category: 'condimentos',
         image: 'assets/productos/condimentos/aji-oro-350gr.jpg',
-        description: 'Pimentón molido para dar color y sabor a tus comidas.\n\nTambién disponible en: 30 g, 40 g, 100 g, 300 g, 400 g',
+        description: 'Ají amarillo chileno.\n\nTambién disponible en: 100 g, 300 g, 400 g',
         format: '350g'
     },
     {
