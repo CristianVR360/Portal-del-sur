@@ -235,7 +235,7 @@ const Landing = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
                             { id: 'cereales', name: 'Cereales', img: 'assets/productos/cereales/card.jpg' },
-                            { id: 'condimentos', name: 'Condimentos', img: 'assets/productos/condimentos/card.jpg' },
+                            { id: 'condimentos', name: 'Condimentos', img: 'assets/productos/condimentos/condimentos2.jpg' },
                             { id: 'encurtidos', name: 'Encurtidos', img: 'assets/productos/encurtidos/card.jpg' },
                             { id: 'frutos-secos', name: 'Frutos Secos', img: 'assets/productos/frutos-secos/card.jpg' },
                             { id: 'granos', name: 'Granos', img: 'assets/productos/granos/card.jpg' },

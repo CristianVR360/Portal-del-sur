@@ -14,7 +14,7 @@ export const products = [
         name: 'Almidón de Maíz',
         category: 'cereales',
         image: 'assets/productos/cereales/almidon-de-maiz-220gr.jpg',
-        description: 'Almidón de maíz ideal para repostería y salsas.\n\nTambién disponible en: 400 g, 800 g',
+        description: 'Almidón de maíz ideal para repostería y salsas.',
         format: '220g'
     },
     {
@@ -22,7 +22,7 @@ export const products = [
         name: 'Almidón de Maíz',
         category: 'cereales',
         image: 'assets/productos/cereales/almidon-de-maíz-800-gr.jpg',
-        description: 'Almidón de maíz ideal para repostería y salsas.\n\nTambién disponible en: 220 g, 400 g',
+        description: 'Almidón de maíz ideal para repostería y salsas.\n\nTambién disponible en: 400 g, 800 g',
         format: '800g'
     },
     {
@@ -30,7 +30,7 @@ export const products = [
         name: 'Avena Instantánea',
         category: 'cereales',
         image: 'assets/productos/cereales/avena-instantanea-400gr.jpg',
-        description: 'Avena instantánea de rápida preparación.\n\nTambién disponible en: 670 g, 700 g',
+        description: 'Avena instantánea de rápida preparación.\n\nTambién disponible en: 400 g, 670 g',
         format: '400g'
     },
     {
@@ -38,7 +38,7 @@ export const products = [
         name: 'Avena Instantánea',
         category: 'cereales',
         image: 'assets/productos/cereales/avena-instantanea-670gr.jpg',
-        description: 'Avena instantánea formato familiar.\n\nTambién disponible en: 400 g, 700 g',
+        description: 'Avena instantánea formato familiar.\n\nTambién disponible en: 400 g, 670 g',
         format: '670g'
     },
     {
@@ -70,7 +70,7 @@ export const products = [
         name: 'Avena Tradicional',
         category: 'cereales',
         image: 'assets/productos/cereales/avena-tradiciona-400gr.jpg',
-        description: 'Hojuelas de avena tradicional integral.\n\nTambién disponible en: 670 g, 800 g',
+        description: 'Hojuelas de avena tradicional integral.\n\nTambién disponible en: 400 g, 800 g',
         format: '400g'
     },
     {
@@ -78,7 +78,7 @@ export const products = [
         name: 'Avena Tradicional',
         category: 'cereales',
         image: 'assets/productos/cereales/avena-tradicional-670gr.jpg',
-        description: 'Avena tradicional en formato grande.\n\nTambién disponible en: 400 g, 800 g',
+        description: 'Avena tradicional en formato grande.\n\nTambién disponible en: 400 g, 670 g',
         format: '670g'
     },
     {
@@ -102,7 +102,7 @@ export const products = [
         name: 'Avena Instantánea',
         category: 'cereales',
         image: 'assets/productos/cereales/avena-instantanea-bolsa-700gr.webp',
-        description: 'Avena instantánea de rápida preparación.\n\nTambién disponible en: 400 g, 670 g',
+        description: 'Avena instantánea de rápida preparación.\n\nTambién disponible en: 400 g, 700 g',
         format: '700g'
     },
     {
@@ -110,7 +110,7 @@ export const products = [
         name: 'Avena Tradicional',
         category: 'cereales',
         image: 'assets/productos/cereales/avena-tradicional-bolsa-800gr.webp',
-        description: 'Hojuelas de avena tradicional integral en formato familiar.\n\nTambién disponible en: 400 g, 670 g',
+        description: 'Hojuelas de avena tradicional integral en formato familiar.\n\nTambién disponible en: 400 g, 800 g',
         format: '800g'
     },
 
@@ -118,7 +118,7 @@ export const products = [
     {
         id: 201,
         name: 'Ají Crema',
-        category: 'condimentos',
+        category: 'encurtidos',
         image: 'assets/productos/condimentos/aji-crema--180gr.jpg',
         description: 'Pasta de ají suave y cremosa.\n\nTambién disponible en: 800 g',
         format: '180g (Doypack)'
@@ -126,7 +126,7 @@ export const products = [
     {
         id: 202,
         name: 'Ají Crema',
-        category: 'condimentos',
+        category: 'encurtidos',
         image: 'assets/productos/condimentos/aji-crema--800.jpg',
         description: 'Pasta de ají suave formato familiar.\n\nTambién disponible en: 180 g',
         format: '800g (Doypack)'
@@ -134,7 +134,7 @@ export const products = [
     {
         id: 203,
         name: 'Ají Oro',
-        category: 'condimentos',
+        category: 'encurtidos',
         image: 'assets/productos/condimentos/aji-oro-350gr.jpg',
         description: 'Ají amarillo chileno.\n\nTambién disponible en: 100 g, 300 g, 400 g',
         format: '350g'
@@ -142,7 +142,7 @@ export const products = [
     {
         id: 204,
         name: 'Salsa de Ají',
-        category: 'condimentos',
+        category: 'encurtidos',
         image: 'assets/productos/condimentos/aji-salsa-180-gr.jpg',
         description: 'Salsa de ají picante tradicional.\n\nTambién disponible en: 800 g',
         format: '180g'
@@ -150,7 +150,7 @@ export const products = [
     {
         id: 205,
         name: 'Salsa de Ají',
-        category: 'condimentos',
+        category: 'encurtidos',
         image: 'assets/productos/condimentos/aji-salsa-800gr.jpg',
         description: 'Salsa de ají formato económico.\n\nTambién disponible en: 180 g',
         format: '800g'
@@ -160,7 +160,7 @@ export const products = [
         name: 'Ajo en Polvo',
         category: 'condimentos',
         image: 'assets/productos/condimentos/ajo-en-polvo-bolsa-40gr.jpg',
-        description: 'Ajo deshidratado y molido.\n\nTambién disponible en: 15 g, 30 g',
+        description: 'Ajo deshidratado y molido.\n\nTambién disponible en: 15 g, 30, 80 g',
         format: '40g'
     },
     {
@@ -176,7 +176,7 @@ export const products = [
         name: 'Bicarbonato',
         category: 'condimentos',
         image: 'assets/productos/condimentos/bicarbonato-bolsa-100gr.jpg',
-        description: 'Bicarbonato de sodio grado alimenticio.\n\nTambién disponible en: 40 g',
+        description: 'Bicarbonato de sodio grado alimenticio.\n\nTambién disponible en: 40 g, 150 g',
         format: '100g'
     },
     {
@@ -192,7 +192,7 @@ export const products = [
         name: 'Canela Molida',
         category: 'condimentos',
         image: 'assets/productos/condimentos/canela-molida-frasco-30g.jpg',
-        description: 'Canela en polvo en frasco conservero.',
+        description: 'Canela en polvo en frasco conservero.\n\nTambién disponible en: 15 g',
         format: '30g'
     },
     {
@@ -200,7 +200,7 @@ export const products = [
         name: 'Canela Molida',
         category: 'condimentos',
         image: 'assets/productos/condimentos/canelamolida-15gr.jpg',
-        description: 'Canela en polvo formato bolsa.',
+        description: 'Canela en polvo formato bolsa.\n\nTambién disponible en: 30 g',
         format: '15g'
     },
     {
@@ -208,31 +208,31 @@ export const products = [
         name: 'Comino con Pimienta',
         category: 'condimentos',
         image: 'assets/productos/condimentos/comino-con-pimienta--frasco-45g.jpg',
-        description: 'Mezcla clásica de comino y pimienta.',
-        format: '45g'
+        description: 'Mezcla clásica de comino y pimienta.\n\nTambién disponible en: 15 g, 40 g',
+        format: '40 g'
     },
     {
         id: 213,
         name: 'Comino con Pimienta Negra (Moledor)',
         category: 'condimentos',
         image: 'assets/productos/condimentos/comino-con-pimienta-negra--frasco-con-moledor-45g.jpg',
-        description: 'Especias enteras con moledor incorporado.',
-        format: '45g'
-    },
-    {
-        id: 214,
-        name: 'Comino con Pimienta Negra Entera',
-        category: 'condimentos',
-        image: 'assets/productos/condimentos/comino-con-pimienta-negra-entera-40gr.jpg',
-        description: 'Mezcla de especias enteras.\n\nTambién disponible en: 45 g',
+        description: 'Especias enteras con moledor incorporado\n\nTambién disponible en: 15 g, 40 g',
         format: '40g'
     },
+    // {
+    //     id: 214,
+    //     name: 'Comino con Pimienta Negra Entera',
+    //     category: 'condimentos',
+    //     image: 'assets/productos/condimentos/comino-con-pimienta-negra-entera-40gr.jpg',
+    //     description: 'Mezcla de especias enteras.\n\nTambién disponible en: 45 g',
+    //     format: '40g'
+    // },
     {
         id: 215,
         name: 'Comino con Pimienta Negra Molida',
         category: 'condimentos',
         image: 'assets/productos/condimentos/comino-con-pimienta-negra-molida-40gr.jpg',
-        description: 'Mezcla molida lista para usar.',
+        description: 'Mezcla molida lista para usar. \n\nTambién disponible en: 15 g, 40 g',
         format: '40g'
     },
     {
@@ -248,7 +248,7 @@ export const products = [
         name: 'Comino Molido',
         category: 'condimentos',
         image: 'assets/productos/condimentos/comino-molido-bolsa-40gr.jpg',
-        description: 'Comino molido de gran aroma.',
+        description: 'Comino molido de gran aroma.\n\nTambién disponible en: 15 g, 80 g',
         format: '40g'
     },
     {
@@ -256,7 +256,7 @@ export const products = [
         name: 'Cúrcuma',
         category: 'condimentos',
         image: 'assets/productos/condimentos/curcuma-bolsa-40gr.jpg',
-        description: 'Cúrcuma en polvo, color y salud.',
+        description: 'Cúrcuma en polvo, color y salud.\n\nTambién disponible en: 80 g',
         format: '40g'
     },
     {
@@ -277,16 +277,16 @@ export const products = [
     },
     {
         id: 221,
-        name: 'Merquén',
+        name: 'Merkén',
         category: 'condimentos',
         image: 'assets/productos/condimentos/merken-bolsa-40gr.jpg',
-        description: 'Ají cacho de cabra ahumado con cilantro.\n\nTambién disponible en: 15 g',
+        description: 'Ají cacho de cabra ahumado con cilantro.\n\nTambién disponible en: 80 g',
         format: '40g'
     },
     {
         id: 222,
         name: 'Mostaza',
-        category: 'condimentos',
+        category: 'encurtidos',
         image: 'assets/productos/condimentos/mostaza--180gr.jpg',
         description: 'Salsa de mostaza tradicional.',
         format: '180g'
@@ -336,7 +336,7 @@ export const products = [
         name: 'Pimienta Negra Molida',
         category: 'condimentos',
         image: 'assets/productos/condimentos/pimienta-negra-molida-bolsa-35fgr.jpg',
-        description: 'Pimienta negra molida fina.\n\nTambién disponible en: 15 g, 45 g',
+        description: 'Pimienta negra molida fina.\n\nTambién disponible en: 15 g, 45 g, 80 g',
         format: '35g'
     },
     {
@@ -344,47 +344,47 @@ export const products = [
         name: 'Realzador de Sabores',
         category: 'condimentos',
         image: 'assets/productos/condimentos/realzador-de-sabores-bolsa-80gr.jpg',
-        description: 'Sal condimentada para realzar tus comidas (Glutamato).',
+        description: 'Sal condimentada para realzar tus comidas (Glutamato).\n\nTambién disponible en: 80 g, 180 g',
         format: '80g'
     },
     {
         id: 230,
         name: 'Sucedáneo de Limón',
-        category: 'condimentos',
+        category: 'encurtidos',
         image: 'assets/productos/condimentos/susedaneo-limon-500cc.jpg',
-        description: 'Jugo sabor limón para ensaladas y bebidas.',
+        description: 'Jugo sabor limón para ensaladas y bebidas.\n\nTambién disponible en: 1 LT',
         format: '500cc'
     },
     {
         id: 231,
         name: 'Vinagre Incoloro',
-        category: 'condimentos',
+        category: 'encurtidos',
         image: 'assets/productos/condimentos/vinagre-incoloro-500cc.jpg',
-        description: 'Vinagre de alcohol blanco.',
+        description: 'Vinagre de alcohol blanco.\n\nTambién disponible en: 1 LT',
         format: '500cc'
     },
     {
         id: 232,
         name: 'Vinagre de Manzana',
-        category: 'condimentos',
+        category: 'encurtidos',
         image: 'assets/productos/condimentos/vinagre-manzana-500cc.jpg',
-        description: 'Vinagre fermentado de manzana.',
+        description: 'Vinagre fermentado de manzana.\n\nTambién disponible en: 1 LT',
         format: '500cc'
     },
     {
         id: 233,
         name: 'Vinagre de Vino Blanco',
-        category: 'condimentos',
+        category: 'encurtidos',
         image: 'assets/productos/condimentos/vinagre-vinoblanco-500cc-.jpg',
-        description: 'Vinagre clásico de vino blanco.',
+        description: 'Vinagre clásico de vino blanco.\n\nTambién disponible en: 1 LT',
         format: '500cc'
     },
     {
         id: 234,
         name: 'Vinagre de Vino Tinto',
-        category: 'condimentos',
+        category: 'encurtidos',
         image: 'assets/productos/condimentos/vinagre-vinotinto-500cc.jpg',
-        description: 'Vinagre clásico de vino tinto.',
+        description: 'Vinagre clásico de vino tinto.\n\nTambién disponible en: 1 LT',
         format: '500cc'
     },
     {
@@ -416,7 +416,7 @@ export const products = [
         name: 'Comino con Pimienta Negra Entera',
         category: 'condimentos',
         image: 'assets/productos/condimentos/comino-con-pimienta-negra-entera-bolsa-40gr.webp',
-        description: 'Mezcla de especias enteras de alta calidad en formato bolsa.\n\nTambién disponible en: 45 g',
+        description: 'Mezcla de especias enteras de alta calidad en formato bolsa.\n\nTambién disponible en: 15 g, 40 g',
         format: '40g'
     },
     {
@@ -432,7 +432,7 @@ export const products = [
         name: 'Pimentón',
         category: 'condimentos',
         image: 'assets/productos/condimentos/pimenton-bolsa-40gr.webp',
-        description: 'Pimentón seleccionado para dar color y sabor a tus platos.\n\nTambién disponible en: 30 g (Frasco)',
+        description: 'Pimentón seleccionado para dar color y sabor a tus platos.\n\nTambién disponible en: 15 g, 80 g',
         format: '40g'
     },
     {
@@ -440,15 +440,15 @@ export const products = [
         name: 'Pimentón Molido',
         category: 'condimentos',
         image: 'assets/productos/condimentos/pimenton-molido.frasco-30gr.webp',
-        description: 'Pimentón molido premium en frasco conservador.\n\nTambién disponible en: 40 g',
-        format: '30g (Frasco)'
+        description: 'Pimentón molido premium en frasco conservador.\n\nTambién disponible en: 15 g, 80 g',
+        format: '80g'
     },
     {
         id: 242,
         name: 'Salsa de Soya',
-        category: 'condimentos',
+        category: 'encurtidos',
         image: 'assets/productos/condimentos/salsa-de-soya-botella-500cc.webp',
-        description: 'Salsa de soya tradicional para realzar preparaciones orientales y aderezos.',
+        description: 'Salsa de soya tradicional para realzar preparaciones orientales y aderezos.\n\nTambién disponible en: 1 LT',
         format: '500cc'
     },
 
@@ -474,7 +474,7 @@ export const products = [
         name: 'Cebolla Perla',
         category: 'encurtidos',
         image: 'assets/productos/encurtidos/cebolla-perla-bolsa-400gr.jpg',
-        description: 'Cebollitas perla en vinagre, ideales para cóctel.',
+        description: 'Cebollitas perla en vinagre, ideales para cóctel.\n\nTambién disponible en: 300 g',
         format: '400g'
     },
     {
@@ -482,7 +482,7 @@ export const products = [
         name: 'Cebolla Perla',
         category: 'encurtidos',
         image: 'assets/productos/encurtidos/cebolla-perla-frasco-300gr.jpg',
-        description: 'Cebollitas perla en frasco.',
+        description: 'Cebollitas perla en frasco.\n\nTambién disponible en: 400 g',
         format: '300g'
     },
     {
@@ -648,7 +648,7 @@ export const products = [
         name: 'Chocolate Decoración',
         category: 'reposteria',
         image: 'assets/productos/reposteria/chocolate-decoración-20gr.jpg',
-        description: 'Granillo de chocolate para repostería.',
+        description: 'Granillo de chocolate para repostería.\n\nTambién disponible en: 80 g',
         format: '20g'
     },
     {
@@ -656,7 +656,7 @@ export const products = [
         name: 'Chocolate Decoración',
         category: 'reposteria',
         image: 'assets/productos/reposteria/chocolate-decoración-80gr.jpg',
-        description: 'Granillo de chocolate para repostería.',
+        description: 'Granillo de chocolate para repostería.\n\nTambién disponible en: 20 g',
         format: '80g'
     },
     {
@@ -664,7 +664,7 @@ export const products = [
         name: 'Coco Rallado',
         category: 'reposteria',
         image: 'assets/productos/reposteria/coco-rallado-80gr.jpg',
-        description: 'Coco deshidratado rallado fino.',
+        description: 'Coco deshidratado rallado fino.\n\nTambién disponible en: 40 g',
         format: '80g'
     },
     {
@@ -720,7 +720,7 @@ export const products = [
         name: 'Chuño',
         category: 'reposteria',
         image: 'assets/productos/reposteria/chuño-bolsa-200gr.webp',
-        description: 'Fécula de papa de alta pureza, indispensable en la cocina y repostería.',
+        description: 'Fécula de papa de alta pureza, indispensable en la cocina y repostería.\n\nTambién disponible en: 400 g',
         format: '200g'
     }
 ];
