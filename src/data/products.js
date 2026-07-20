@@ -113,6 +113,22 @@ export const products = [
         description: 'Hojuelas de avena tradicional integral en formato familiar.\n\nTambién disponible en: 400 g, 800 g',
         format: '800g'
     },
+    {
+        id: 114,
+        name: 'Granola Avena Cranberries y Miel',
+        category: 'cereales',
+        image: 'assets/productos/cereales/granola avena crawnberries y miel 300 gr.jpeg',
+        description: 'Deliciosa mezcla de granola con avena, cranberries y miel.',
+        format: '300g'
+    },
+    {
+        id: 115,
+        name: 'Granola Avena Miel y Almendras',
+        category: 'cereales',
+        image: 'assets/productos/cereales/granola avena miel y almendras 300 gr.jpeg',
+        description: 'Crujiente granola de avena con miel y almendras.',
+        format: '300g'
+    },
 
     // --- CONDIMENTOS ---
     {
@@ -722,5 +738,29 @@ export const products = [
         image: 'assets/productos/reposteria/chuño-bolsa-200gr.webp',
         description: 'Fécula de papa de alta pureza, indispensable en la cocina y repostería.\n\nTambién disponible en: 400 g',
         format: '200g'
+    },
+    {
+        id: 612,
+        name: 'Chips de Chocolate Semi Amargo',
+        category: 'reposteria',
+        image: 'assets/productos/reposteria/chips chocolate semi amargo 180 g.jpeg',
+        description: 'Chips de chocolate semi amargo, ideales para galletas y repostería.',
+        format: '180g'
+    },
+    {
+        id: 613,
+        name: 'Mostacillas Corazones',
+        category: 'reposteria',
+        image: 'assets/productos/reposteria/mostacillas corazones 70g.jpeg',
+        description: 'Mostacillas en forma de corazón para decorar tus preparaciones.',
+        format: '70g'
+    },
+    {
+        id: 614,
+        name: 'Mostacillas Estrellas',
+        category: 'reposteria',
+        image: 'assets/productos/reposteria/mostacillas estrellas 70 g.jpeg',
+        description: 'Mostacillas en forma de estrella para decorar tus postres.',
+        format: '70g'
     }
 ];
